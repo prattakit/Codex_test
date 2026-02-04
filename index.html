@@ -1,18 +1,20 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="th">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Project Homepage</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <title>Login</title>
 </head>
 <body>
-  <main class="card">
-    <h1>Project Homepages</h1>
-    <p>เลือกใช้โปรแกรม</p>
-    <a href="calculations/calculations.html">ไปที่เครื่องคิดเลข</a>
-    <a href="bookingrooms/bookingrooms.html">ไปที่จองห้อง</a>
-  </main>
-  
+
+<h2>Login</h2>
+
+<input type="text" id="username" placeholder="Username"><br><br>
+<input type="password" id="password" placeholder="Password"><br><br>
+
+<button onclick="login()">Login</button>
+
+<p id="result"></p>
+
+<script src="script.js"></script>
 </body>
 </html>
