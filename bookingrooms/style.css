@@ -6,7 +6,7 @@ body {
 
 .container {
   max-width: 600px;
-  background: #ffffff;
+  background: #fff;
   padding: 20px;
   border-radius: 8px;
   margin: auto;
@@ -37,6 +37,18 @@ button {
 
 button:hover {
   background: #45a049;
+}
+
+.delete-btn {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 5px 8px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: #c0392b;
 }
 
 table {
