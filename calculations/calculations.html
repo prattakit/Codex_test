@@ -12,101 +12,43 @@
         <h1>โปรแกรมคำนวณเลข</h1>
         <p>ใช้งานได้บน GitHub Pages เพียงเปิดไฟล์หน้านี้</p>
       </header>
-    <title>หน้าหลักโปรเจกต์</title>
-    <style>
-      :root {
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        color-scheme: light;
-        --bg: #0f172a;
-        --card: #111827;
-        --accent: #38bdf8;
-        --text: #f8fafc;
-        --muted: #94a3b8;
-      }
 
       <section class="calculator__display">
         <label for="display" class="calculator__label">ผลลัพธ์</label>
         <input id="display" class="calculator__input" type="text" value="0" readonly />
       </section>
-      * {
-        box-sizing: border-box;
-      }
 
       <section class="calculator__keys" aria-label="แป้นคำนวณ">
         <button class="key key--utility" data-action="clear">AC</button>
         <button class="key key--utility" data-action="sign">+/-</button>
         <button class="key key--utility" data-action="percent">%</button>
         <button class="key key--operator" data-operator="/">÷</button>
-      body {
-        margin: 0;
-        min-height: 100vh;
-        display: grid;
-        place-items: center;
-        background: radial-gradient(circle at top, #1f2937, var(--bg));
-        color: var(--text);
-      }
 
         <button class="key" data-number="7">7</button>
         <button class="key" data-number="8">8</button>
         <button class="key" data-number="9">9</button>
         <button class="key key--operator" data-operator="*">×</button>
-      .card {
-        background: var(--card);
-        padding: 32px;
-        border-radius: 20px;
-        box-shadow: 0 20px 60px rgba(15, 23, 42, 0.5);
-        width: min(92vw, 420px);
-        text-align: center;
-      }
 
         <button class="key" data-number="4">4</button>
         <button class="key" data-number="5">5</button>
         <button class="key" data-number="6">6</button>
         <button class="key key--operator" data-operator="-">−</button>
-      .card h1 {
-        margin: 0 0 8px;
-        font-size: 1.5rem;
-      }
 
         <button class="key" data-number="1">1</button>
         <button class="key" data-number="2">2</button>
         <button class="key" data-number="3">3</button>
         <button class="key key--operator" data-operator="+">+</button>
-      .card p {
-        margin: 0 0 20px;
-        color: var(--muted);
-      }
 
         <button class="key key--wide" data-number="0">0</button>
         <button class="key" data-action="decimal">.</button>
         <button class="key key--equals" data-action="calculate">=</button>
       </section>
-      .card a {
-        display: inline-block;
-        padding: 12px 20px;
-        border-radius: 999px;
-        background: var(--accent);
-        color: #0f172a;
-        text-decoration: none;
-        font-weight: 600;
-      }
 
       <footer class="calculator__footer">
         <p>รองรับการคลิกหรือพิมพ์ตัวเลขจากคีย์บอร์ด</p>
       </footer>
-      .card a:hover {
-        filter: brightness(1.05);
-      }
-    </style>
-  </head>
-  <body>
-    <main class="card">
-      <h1>หน้าหลักโปรเจกต์</h1>
-      <p>เลือกเข้าใช้งานเครื่องคิดเลข</p>
-      <a href="calculations/calculations.html">ไปที่เครื่องคิดเลข</a>
     </main>
 
     <script src="script.js"></script>
   </body>
-</html>
 </html>
