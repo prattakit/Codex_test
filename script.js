@@ -17,6 +17,7 @@ function login() {
       console.log(data);
       if (data.success) {
         alert("ยินดีต้อนรับ " + data.fullname);
+          navigate("/page/home");
       } else {
         alert(data.message);
       }

@@ -1,4 +1,4 @@
-<!-- <!doctype html>
+<!doctype html>
 <html lang="th">
 <head>
   <meta charset="UTF-8" />
@@ -7,21 +7,33 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <main class="card">
+<div class="card">
+
+  <!-- 🔹 ส่วนแสดงเมื่อ Login แล้ว -->
+  <div class="login-container">
+    <h2>👋 Welcome</h2>
+    <p id="fullname"></p>
+
+    <button onclick="logout()">Logout</button>
+  </div>
+
+  <hr style="margin: 20px 0;">
+
+  <!-- 🔹 Project Homepages -->
+  <main>
     <h1>Project Homepages</h1>
     <p>เลือกใช้โปรแกรม</p>
-    <a href="calculations/calculations.html">ไปที่เครื่องคิดเลข</a>
-    <a href="bookingrooms/bookingrooms.html">ไปที่จองห้อง</a>
+
+    <div class="menu">
+      <a href="calculations/calculations.html">🧮 เครื่องคิดเลข</a>
+      <a href="bookingrooms/bookingrooms.html">🏢 จองห้อง</a>
+    </div>
   </main>
+
+</div>
   
 </body>
 </html>
- -->
 
 
-<div class="login-container">
-  <h2>👋 Welcome</h2>
-  <p id="fullname"></p>
 
-  <button onclick="logout()">Logout</button>
-</div>
