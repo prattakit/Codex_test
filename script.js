@@ -17,7 +17,7 @@ function login() {
       console.log(data);
       if (data.success) {
         alert("ยินดีต้อนรับ " + data.fullname);
-          navigate("/page/home");
+         navigate("/home");
       } else {
         alert(data.message);
       }
@@ -31,5 +31,5 @@ function login() {
 
 function logout() {
   localStorage.clear();
-  navigate("/page/login");
+  navigate("/login");
 }
