@@ -3,13 +3,10 @@ function login() {
   const password = document.getElementById("password").value;
 
   const url =
-  "https://script.googleusercontent.com/macros/echo?user_content_key=AehSKLhSVUJyfBxkg8UiXow7sAPHDeFUx-ryyfextWs59RyUlbqPsT_snpVMnvizBwPZdIugPDX3Ua-dN5y5CRA5UCbMIgqZh9PIHTcA-N-OEVZ3ZvN4mtbEfKETvSB_sfV7WTCfx153EqYULrKhOZ-ooh_cSVjIlRE8Or4eRpvHAHdCBWrZpr2hTxZJXyDBk84ozBloCpssddPzIHchZY9S-Kh5p2uUtejzD0flhkujN-rIk1trjgOymdTdLpmFLTsXy7Rkk73aYqSQGT7_AqtzhfbJcDl9LQ"
+  "https://script.googleusercontent.com/macros/echo?user_content_key=AKfycbxs2Tq8icOCHJRI8Som_YBR_sLw0c_BAE7Ah0d6I5f2NSpB5Jblg9-mSfwswJtc5ffp"
   + "&username=" + encodeURIComponent(username)
   + "&password=" + encodeURIComponent(password);
     
-    //   const url = "https://script.google.com/macros/s/AKfycbxs2Tq8icOCHJRI8Som_YBR_sLw0c_BAE7Ah0d6I5f2NSpB5Jblg9-mSfwswJtc5ffp/exec?"
-    // + "&username=" + encodeURIComponent(username)
-    // + "&password=" + encodeURIComponent(password);
 
   fetch(url)
     .then(res => res.json())
@@ -18,7 +15,7 @@ function login() {
       if (data.success) {
         alert("ยินดีต้อนรับ บบบบ " + data.fullname);
          if (data.success) {
-            localStorage.setItem("fullname", data.fullname);
+            // localStorage.setItem("fullname", data.fullname);
             navigate("/home");
           }
       } else {
