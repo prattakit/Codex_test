@@ -17,7 +17,10 @@ function login() {
       console.log(data);
       if (data.success) {
         alert("ยินดีต้อนรับ " + data.fullname);
-         navigate("/home");
+         if (data.success) {
+            localStorage.setItem("fullname", data.fullname);
+            navigate("/home");
+          }
       } else {
         alert(data.message);
       }
@@ -33,3 +36,4 @@ function logout() {
   localStorage.clear();
   navigate("/login");
 }
+
