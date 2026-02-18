@@ -23,7 +23,7 @@ function login() {
         alert("ยินดีต้อนรับ " + data.fullname);
         // localStorage.setItem("fullname", data.fullname);
         // navigate("/home");
-       window.location.href = "page/home.html";
+      //  window.location.href = "page/home.html";
       } else {
         alert(data.message || "ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง");
       }
