@@ -1,6 +1,9 @@
+import { useNavigate } from "react-router-dom";
+
 function login() {
   const username = document.getElementById("username").value;
   const password = document.getElementById("password").value;
+  const navigate = useNavigate();
 
   const url =
     "https://script.google.com/macros/s/AKfycbyItoPAZxwMnqasn0o7Sh3oim1ZUlDpyVTOfQGIGtnP4m_UyUwA0fXrtsUXbs4A0C9x/exec"
